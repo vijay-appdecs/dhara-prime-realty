@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-Transaction Care & Property Liaison | Dhara Prime Realty Hyderabad</title>
+  <meta name="description" content="Dedicated post-transaction care, fitout vendor coordination, landlord-tenant liaison, and lease renewal management in Hyderabad with Dhara Prime Realty.">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" title="Open in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a></span>
+        <span class="top-badge">Ongoing Operational Care &amp; Support</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:dhararealtors09@gmail.com">dhararealtors09@gmail.com</a>
+        <a href="tel:+918317604342">+91 8317604342</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation with Dropdown -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-wrap" aria-label="DHARA PRIME REALTY Home">
+        <img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="header-logo">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/services.html" class="nav-link nav-link-dropdown active">
+            Services
+            <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/service-commercial.html" class="dropdown-item">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="dropdown-item">Residential Services</a>
+            <a href="/service-investments.html" class="dropdown-item">Investment Services</a>
+            <a href="/service-mandates.html" class="dropdown-item">Mandates</a>
+            <a href="/service-marketing.html" class="dropdown-item">Property Marketing</a>
+            <a href="/service-advisory.html" class="dropdown-item">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="dropdown-item">Transaction Support</a>
+            <a href="/service-post-care.html" class="dropdown-item active">Post-Transaction Care</a>
+          </div>
+        </div>
+        <a href="/projects.html" class="nav-link">Projects</a>
+        <a href="/contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact.html" class="btn btn-primary header-cta">Get in Touch</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="/" class="drawer-logo-link" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;"><img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY" class="drawer-logo" style="height: 38px;"></a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="drawer-close" id="drawerClose">&times;</button>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="/" class="drawer-link">Home</a>
+      <a href="/about.html" class="drawer-link">About Us</a>
+      
+      <!-- Mobile Submenu Accordion -->
+      <div class="drawer-dropdown-parent">
+        <button class="drawer-dropdown-toggle active">
+          <span>Services</span>
+          <svg class="drawer-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transform:rotate(180deg);"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="drawer-submenu open">
+          <a href="/service-commercial.html" class="drawer-sublink">&bull; Commercial Leasing &amp; Sales</a>
+          <a href="/service-residential.html" class="drawer-sublink">&bull; Residential Services</a>
+          <a href="/service-investments.html" class="drawer-sublink">&bull; Investment Services</a>
+          <a href="/service-mandates.html" class="drawer-sublink">&bull; Mandates</a>
+          <a href="/service-marketing.html" class="drawer-sublink">&bull; Property Marketing</a>
+          <a href="/service-advisory.html" class="drawer-sublink">&bull; Advisory &amp; Consulting</a>
+          <a href="/service-transaction.html" class="drawer-sublink">&bull; Transaction Support</a>
+          <a href="/service-post-care.html" class="drawer-sublink active">&bull; Post-Transaction Care</a>
+        </div>
+      </div>
+      <a href="/projects.html" class="drawer-link">Projects</a>
+      <a href="/contact.html" class="drawer-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- 1. FULL-SCREEN CINEMATIC MINIMAL HERO -->
+  <section class="hero-service-fullscreen" style="background-image: url('/assets/images/hero-postcare-cinematic.jpg');">
+    <div class="container">
+      <div class="hero-commercial-content">
+        <h1 class="hero-commercial-title">
+          Post-Transaction Care &amp;<br><span class="gold-accent">Property Liaison</span>
+        </h1>
+        <div class="hero-gold-line"></div>
+        <p class="hero-commercial-tagline">SEAMLESS OCCUPANCY, LIFECYCLE MANAGEMENT &amp; VALUE RETENTION</p>
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <a href="#postcareContent" class="hero-scroll-prompt" aria-label="Scroll to content">
+      <span>SCROLL</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+  </section>
+
+  <!-- 2. FOUR-ITEM VALUE & TRUST STRIP -->
+  <section class="trust-strip-bar" id="postcareContent">
+    <div class="container">
+      <div class="trust-strip-grid">
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <span class="trust-strip-title">Fit-Out &amp; Handover<br>Liaison</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <span class="trust-strip-title">CAM &amp; Facility<br>Audits</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <span class="trust-strip-title">48-Hour Resolution<br>Service SLA</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+          </div>
+          <span class="trust-strip-title">Proactive Lease<br>Renewals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT SECTION: PRESERVING VALUE (LIGHT) -->
+  <section class="commercial-about-light">
+    <div class="container">
+      <div class="commercial-about-grid">
+        <!-- Content Left -->
+        <div>
+          <span class="commercial-eyebrow">Lifecycle Asset Care &amp; Tenant Liaison</span>
+          <h2 class="commercial-heading-serif">
+            Preserving Asset Value Beyond <span class="gold-accent">The Closing Date</span>
+          </h2>
+          <p class="commercial-lead-text">
+            At Dhara Prime Realty, our commitment does not end when the contracts are registered. A successful commercial lease or property acquisition requires vigilant day-one operational support.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 32px; font-size: 0.98rem;">
+            We act as your dedicated operational bridge between landlords, corporate occupiers, facility management teams, and contractors. From supervising snag list rectifications and tenant fit-out approvals to utility transfer liaison and long-term lease renewal negotiations, our asset care specialists safeguard your investment and maximize tenancy satisfaction.
+          </p>
+
+          <!-- 4 Statistics -->
+          <div class="commercial-stats-grid">
+            <div class="stat-item-luxury">
+              <div class="stat-number">200+</div>
+              <div class="stat-desc">Spaces Handed Over</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">99%</div>
+              <div class="stat-desc">Lease Renewal Rate</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">48hr</div>
+              <div class="stat-desc">Resolution SLA</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">10+ Yrs</div>
+              <div class="stat-desc">Asset Retention</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Right with Floating Badge -->
+        <div class="about-media-frame">
+          <img src="/assets/images/about-postcare.jpg" alt="Post-Transaction Care and Asset Handover" loading="lazy">
+          <div class="about-floating-badge">
+            <img src="/assets/images/logo-emblem-dark.png" alt="Dhara Emblem" class="badge-emblem">
+            <span class="badge-text">Your Trusted Partner in Operational Asset Care</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CAPABILITIES SECTION (DARK) -->
+  <section class="commercial-capabilities-dark">
+    <div class="container">
+      <div class="capabilities-header-wrap">
+        <span class="commercial-eyebrow">Our Post-Care Capabilities</span>
+        <h2 class="commercial-heading-serif">Operational Oversight for Worry-Free Property Ownership</h2>
+      </div>
+
+      <div class="capabilities-grid-4">
+        <!-- Card 1 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <h3 class="cap-title">Fit-Out Coordination</h3>
+            <p class="cap-desc">Snag-list documentation, contractor security access, architectural guideline enforcement, and HVAC/fire NOC sign-offs.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/postcare-cap-1.jpg" alt="Fit-Out Coordination" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="cap-title">CAM &amp; Utility Audits</h3>
+            <p class="cap-desc">Scrutiny of monthly Common Area Maintenance calculations, sub-meter electrical billing, diesel generator backup rates, and water charges.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/postcare-cap-2.jpg" alt="CAM and Utility Audits" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="cap-title">Tenant-Landlord Liaison</h3>
+            <p class="cap-desc">Dedicated account managers handling day-to-day building permissions, parking slot allocations, security gate passes, and issue resolution.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/postcare-cap-3.jpg" alt="Tenant-Landlord Liaison" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            </div>
+            <h3 class="cap-title">Lease Renewals &amp; Exits</h3>
+            <p class="cap-desc">Tracking 3-year escalation schedules, issuing timely renewal proposals, market rent renegotiations, and seamless reinstatement exits.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/postcare-cap-4.jpg" alt="Lease Renewals and Exits" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED POST-CARE CASE STUDIES (LIGHT) -->
+  <section class="featured-opportunities-light">
+    <div class="container">
+      <div class="featured-header-row">
+        <div>
+          <span class="commercial-eyebrow">Asset Management Success</span>
+          <h2 class="commercial-heading-serif" style="margin-bottom: 0;">Demonstrated Operational Excellence in Hyderabad</h2>
+        </div>
+        <div>
+          <a href="/projects.html" class="view-all-link">
+            <span>View All Properties</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="properties-grid-3">
+        <!-- Case 1 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/postcare-show-1.jpg" alt="MNC Tech Center Handover Knowledge City" loading="lazy">
+            <span class="prop-badge-loc">MADHAPUR</span>
+          </div>
+          <div class="prop-body-lux">
+            <div class="prop-loc-meta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Knowledge City, Madhapur</span>
+            </div>
+            <h3 class="prop-title-lux">MNC Tech Center Handover</h3>
+            <p class="prop-subtitle-lux">Supervised fit-out handover for a 45,000 sq.ft. engineering center, completing snagging with zero operational delay.</p>
+            
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>45,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero-Defect Sign-off</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>Grade-A Tech Park</span>
+              </div>
+            </div>
+
+            <button type="button" class="prop-btn-gold" data-open-visit-modal data-project="MNC Tech Center Handover Knowledge City">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/postcare-show-2.jpg" alt="Retail High-Street CAM Optimization Jubilee Hills" loading="lazy">
+            <span class="prop-badge-loc">JUBILEE HILLS</span>
+          </div>
+          <div class="prop-body-lux">
+            <div class="prop-loc-meta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Road No. 36, Jubilee Hills</span>
+            </div>
+            <h3 class="prop-title-lux">Retail Flagship CAM Audit</h3>
+            <p class="prop-subtitle-lux">Audited CAM charges for an 18,000 sq.ft. multi-level retail flagship, saving substantial operating overhead annually.</p>
+            
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>18,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>16% CAM Reduction</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>Prime Retail Strip</span>
+              </div>
+            </div>
+
+            <button type="button" class="prop-btn-gold" data-open-visit-modal data-project="Retail Flagship CAM Audit Jubilee Hills">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/postcare-show-3.jpg" alt="Commercial Tower Lease Renewal Gachibowli" loading="lazy">
+            <span class="prop-badge-loc">GACHIBOWLI</span>
+          </div>
+          <div class="prop-body-lux">
+            <div class="prop-loc-meta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Gachibowli, Hyderabad</span>
+            </div>
+            <h3 class="prop-title-lux">Tower Lease Renewals</h3>
+            <p class="prop-subtitle-lux">Negotiated master lease extensions across an 80,000 sq.ft. corporate asset, locking in 15% step-ups with full retention.</p>
+            
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>80,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>15% Rent Escalation</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% Retention</span>
+              </div>
+            </div>
+
+            <button type="button" class="prop-btn-gold" data-open-visit-modal data-project="Tower Lease Renewals Gachibowli">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. POST-TRANSACTION CARE LIFECYCLE (DARK) -->
+  <section class="leasing-lifecycle-dark">
+    <div class="container">
+      <div class="capabilities-header-wrap">
+        <span class="commercial-eyebrow">Operational Governance</span>
+        <h2 class="commercial-heading-serif">5-Stage Post-Transaction Operational Cycle</h2>
+      </div>
+
+      <div class="lifecycle-timeline-row">
+        <!-- Step 1 -->
+        <div class="lifecycle-step-card">
+          <div class="step-num-badge">1</div>
+          <div class="step-card-content">
+            <div class="step-icon-round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <h4 class="step-title">Snag Audit</h4>
+            <p class="step-text">Comprehensive physical inspection, defect documentation, and joint sign-off with the builder or developer team.</p>
+          </div>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="lifecycle-step-card">
+          <div class="step-num-badge">2</div>
+          <div class="step-card-content">
+            <div class="step-icon-round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4 class="step-title">Fit-Out Facilitation</h4>
+            <p class="step-text">Managing building entry permits, debris removal protocols, temporary power allocations, and vendor compliance.</p>
+          </div>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="lifecycle-step-card">
+          <div class="step-num-badge">3</div>
+          <div class="step-card-content">
+            <div class="step-icon-round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h4 class="step-title">Utility Transfer</h4>
+            <p class="step-text">Assisting with TSSPDCL electricity billing transfers, high-speed fiber NOCs, and municipal water registrations.</p>
+          </div>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="lifecycle-step-card">
+          <div class="step-num-badge">4</div>
+          <div class="step-card-content">
+            <div class="step-icon-round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h4 class="step-title">CAM Scrutiny</h4>
+            <p class="step-text">Quarterly verification of facility billing, common utility consumption rates, and sinking fund audit reconciliation.</p>
+          </div>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="lifecycle-step-card">
+          <div class="step-num-badge">5</div>
+          <div class="step-card-content">
+            <div class="step-icon-round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            </div>
+            <h4 class="step-title">Renewal Governance</h4>
+            <p class="step-text">Proactive market benchmarking 90 days prior to lease expiry, rent escalation negotiation, and renewal deed execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONSULTATION BANNER (LIGHT/CHAMPAGNE) -->
+  <section class="banner-cta">
+    <div class="container banner-inner">
+      <span class="commercial-eyebrow">Lifecycle Property Governance</span>
+      <h2>Ensure Hassle-Free Operations for Your Property</h2>
+      <p>
+        Connect with our post-transaction care team to streamline your fit-out handover, audit CAM expenditures, or manage corporate lease extensions.
+      </p>
+      <div class="banner-actions">
+        <button class="btn btn-primary" data-modal-open="visitModal" data-project-title="General Post-Transaction Care Support">
+          Request Post-Care Support
+        </button>
+        <a href="tel:+918317604342" class="btn btn-outline">
+          Call Property Specialist
+        </a>
+      </div>
+    </div>
+  </section>
+
+      <!-- Site Footer (Deep Navy with Golden Skyline Watermark & Exact Visible Logo) -->
+  <footer class="site-footer-prime">
+    <!-- Golden Skyline Line-Art Watermark on the Right -->
+    <img src="/assets/images/dhara-prime-skyline.png" alt="Hyderabad Skyline" class="footer-skyline-watermark-prime" loading="lazy">
+
+    <div class="container">
+      <div class="footer-grid-prime">
+        <!-- Col 1: Exact Brand Identity -->
+        <div>
+          <a href="/" style="display: inline-block;">
+            <img src="/assets/images/dhara-prime-horizontal-dark.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="footer-logo-img-prime">
+          </a>
+          <p class="footer-brand-p-prime">
+            Dhara Prime Realty is a premier Hyderabad-based real estate consultancy delivering trusted commercial leasing, luxury residences and strategic asset advisory.
+          </p>
+          <div class="footer-founder-prime">
+            <span class="founder-label">Connect with a </span><span class="founder-name">real estate consultant.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title-prime">Quick Links</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/" class="footer-nav-link-prime">Home</a>
+            <a href="/about.html" class="footer-nav-link-prime">About Us</a>
+            <a href="/services.html" class="footer-nav-link-prime">Services</a>
+            <a href="/projects.html" class="footer-nav-link-prime">Projects</a>
+            <a href="/contact.html" class="footer-nav-link-prime">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Our Services -->
+        <div>
+          <h4 class="footer-col-title-prime">Our Services</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/service-commercial.html" class="footer-nav-link-prime">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="footer-nav-link-prime">Residential Services</a>
+            <a href="/service-investments.html" class="footer-nav-link-prime">Investment Services</a>
+            <a href="/service-mandates.html" class="footer-nav-link-prime">Exclusive Mandates</a>
+            <a href="/service-marketing.html" class="footer-nav-link-prime">Property Marketing</a>
+            <a href="/service-advisory.html" class="footer-nav-link-prime">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="footer-nav-link-prime">Transaction Support</a>
+            <a href="/service-post-care.html" class="footer-nav-link-prime">Post-Transaction Care</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div>
+          <h4 class="footer-col-title-prime">Contact Us</h4>
+          <div class="footer-contact-item-prime footer-contact-address-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/></svg>
+            <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Mayfair Gardens, Banjara Hills in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+918317604342" class="footer-tel-link" data-phone="+918317604342" data-display="+91 83176 04342" title="Call +91 83176 04342">+91 83176 04342</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+919963740709" class="footer-tel-link" data-phone="+919963740709" data-display="+91 99637 40709" title="Call +91 99637 40709">+91 99637 40709</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info.dharaprimereality@gmail.com" class="footer-email-link" data-email="info.dharaprimereality@gmail.com" title="Open Gmail for info.dharaprimereality@gmail.com">info.dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:dharaprimereality@gmail.com" class="footer-email-link" data-email="dharaprimereality@gmail.com" title="Open Gmail for dharaprimereality@gmail.com">dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-social-row-prime">
+            <a href="https://facebook.com" target="_blank" class="footer-social-icon-prime" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon-prime" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon-prime" aria-label="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon-prime" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19a2.506 2.506 0 0 0-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42c-.87.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.41 4.81c.23.86.9 1.54 1.77 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.506 2.506 0 0 0 1.76-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-prime">
+        <div>&copy; 2026 Dhara Prime Realty. All Rights Reserved.</div>
+        <div style="color: rgba(247, 245, 240, 0.65);">Designed and Developed by Appdecs</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schedule Site Visit Modal -->
+  <div class="modal-backdrop" id="visitModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <span class="section-tag" style="margin-bottom: 8px;">Operational Care</span>
+      <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Request Post-Care Assistance</h3>
+      <p style="color: var(--gold-light); font-weight: 600; margin-bottom: 20px;" id="visitProjectTitle">Select Property</p>
+
+      <form data-handle-submit>
+        <input type="hidden" name="project" value="">
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input type="text" class="form-control" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" class="form-control" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number *</label>
+          <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Property Location &amp; Type of Support</label>
+          <input type="text" class="form-control" placeholder="e.g. Fit-Out Snagging or CAM Audit in Madhapur">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Submit Support Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918317604342?text=Hello%20Dhara%20Realtors,%20I%20would%20like%20to%20inquire%20about%20Post-Transaction%20Care%20and%20Property%20Liaison." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

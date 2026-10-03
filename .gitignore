@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Development and Scratch Files
+scratch/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary root test images and crops from logo cleanup
+crop_*
+clean_*
+font_test_*
+test_*
+comp_dark_*
+hero_treat_*
+shot_*.png
+bar_*.png
+char_*.png
+t1_*.jpg
+t2_*.jpg
+t3_*.jpg
+check_logos.py
+check_page.js
+check_tagline_horizontal.png
+current_tagline_horizontal.png
+debug_text_block.jpg
+dhara_logo_cropped.jpg
+full_logo_rembg.png
+horiz_text_sample.png
+logo_png_bottom.png
+logo_text_side.png
+media_cropped.jpg
+media_logo_rembg.png
+media_logo_rembg_cropped.png
+new_tagline_3d.png
+p1_banner.png
+p1_header.png
+preview_dark.jpg
+preview_hero.jpg
+preview_light.jpg
+tagline_*
+text_im*.jpg
+transparent_tagline_3d.png

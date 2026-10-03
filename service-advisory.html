@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Advisory &amp; Consulting | Dhara Prime Realty Hyderabad</title>
+  <meta name="description" content="Strategic commercial real estate advisory and consulting services in Hyderabad. Data-driven occupier strategy, valuation feasibility, and asset repositioning.">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" title="Open in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a></span>
+        <span class="top-badge">Strategic Advisory</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:dhararealtors09@gmail.com">dhararealtors09@gmail.com</a>
+        <a href="tel:+918317604342">+91 8317604342</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation with Dropdown -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-wrap" aria-label="DHARA PRIME REALTY Home">
+        <img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="header-logo">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/services.html" class="nav-link nav-link-dropdown active">
+            Services
+            <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/service-commercial.html" class="dropdown-item">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="dropdown-item">Residential Services</a>
+            <a href="/service-investments.html" class="dropdown-item">Investment Services</a>
+            <a href="/service-mandates.html" class="dropdown-item">Mandates</a>
+            <a href="/service-marketing.html" class="dropdown-item">Property Marketing</a>
+            <a href="/service-advisory.html" class="dropdown-item active">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="dropdown-item">Transaction Support</a>
+            <a href="/service-post-care.html" class="dropdown-item">Post-Transaction Care</a>
+          </div>
+        </div>
+        <a href="/projects.html" class="nav-link">Projects</a>
+        <a href="/contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact.html" class="btn btn-primary header-cta">
+          Get in Touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="/" class="drawer-logo-link" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;"><img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY" class="drawer-logo" style="height: 38px;"></a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="drawer-close" id="drawerClose">&times;</button>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="/" class="drawer-link">Home</a>
+      <a href="/about.html" class="drawer-link">About Us</a>
+      
+      <!-- Mobile Submenu Accordion -->
+      <div class="drawer-dropdown-parent">
+        <button class="drawer-dropdown-toggle active">
+          <span>Services</span>
+          <svg class="drawer-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transform:rotate(180deg);"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="drawer-submenu open">
+          <a href="/service-commercial.html" class="drawer-sublink">&bull; Commercial Leasing &amp; Sales</a>
+          <a href="/service-residential.html" class="drawer-sublink">&bull; Residential Services</a>
+          <a href="/service-investments.html" class="drawer-sublink">&bull; Investment Services</a>
+          <a href="/service-mandates.html" class="drawer-sublink">&bull; Mandates</a>
+          <a href="/service-marketing.html" class="drawer-sublink">&bull; Property Marketing</a>
+          <a href="/service-advisory.html" class="drawer-sublink active">&bull; Advisory &amp; Consulting</a>
+          <a href="/service-transaction.html" class="drawer-sublink">&bull; Transaction Support</a>
+          <a href="/service-post-care.html" class="drawer-sublink">&bull; Post-Transaction Care</a>
+        </div>
+      </div>
+      <a href="/projects.html" class="drawer-link">Projects</a>
+      <a href="/contact.html" class="drawer-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- 1. FULL-SCREEN CINEMATIC MINIMAL HERO -->
+  <section class="hero-service-fullscreen" style="background-image: url('/assets/images/hero-advisory-cinematic.jpg');">
+    <div class="container">
+      <div class="hero-commercial-content">
+        <h1 class="hero-commercial-title">
+          Strategic<br>Advisory &amp; <span class="gold-accent">Consulting</span>
+        </h1>
+        <div class="hero-gold-line"></div>
+        <p class="hero-commercial-tagline">DATA-DRIVEN REAL ESTATE INTELLIGENCE</p>
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <a href="#advisoryContent" class="hero-scroll-prompt" aria-label="Scroll to content">
+      <span>SCROLL</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+  </section>
+
+  <!-- 2. FOUR-ITEM VALUE & TRUST STRIP -->
+  <section class="trust-strip-bar" id="advisoryContent">
+    <div class="container">
+      <div class="trust-strip-grid">
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <span class="trust-strip-title">Data-Driven<br>Micro-Market Intel</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <span class="trust-strip-title">Financial Feasibility<br>&amp; DCF Modeling</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <span class="trust-strip-title">Risk Mitigation &amp;<br>Regulatory Audits</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <span class="trust-strip-title">Occupier Advocacy<br>&amp; Negotiation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT SECTION: EMPOWERING SOUND REAL ESTATE DECISIONS (LIGHT) -->
+  <section class="commercial-about-light">
+    <div class="container">
+      <div class="commercial-about-grid">
+        <!-- Content Left -->
+        <div>
+          <span class="commercial-eyebrow">Strategic Real Estate Advisory</span>
+          <h2 class="commercial-heading-serif">
+            Empowering Sound Decisions in <span class="gold-accent">Hyderabad</span>
+          </h2>
+          <p class="commercial-lead-text">
+            In a fast-moving real estate market like Hyderabad, informed decisions require more than local listings—they demand institutional intelligence, financial modeling, and strategic risk evaluation.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 32px; font-size: 0.98rem;">
+            Dhara Prime Realty provides specialized advisory and consulting services for corporate occupiers, institutional investors, and property developers. We bridge the gap between business objectives and spatial realities, helping you forecast capital expenditures, evaluate micro-market supply pipelines, and optimize lease covenants.
+          </p>
+
+          <!-- 4 Statistics -->
+          <div class="commercial-stats-grid">
+            <div class="stat-item-luxury">
+              <div class="stat-number">1M+&nbsp;Sq.Ft</div>
+              <div class="stat-desc">Advised Value</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">50+</div>
+              <div class="stat-desc">Corporate Occupiers</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">100%</div>
+              <div class="stat-desc">Due Diligence Clear</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">10+</div>
+              <div class="stat-desc">Years Expertise</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Right with Floating Badge -->
+        <div class="about-media-frame">
+          <img src="/assets/images/about-advisory.jpg" alt="Real Estate Advisory Analysis" loading="lazy">
+          <div class="about-floating-badge">
+            <img src="/assets/images/logo-emblem-dark.png" alt="Dhara Emblem" class="badge-emblem">
+            <span class="badge-text">Your Partner in Strategic Real Estate Advisory</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CAPABILITIES SECTION: TAILORED ADVISORY CAPABILITIES (DARK) -->
+  <section class="commercial-capabilities-dark">
+    <div class="container">
+      <div class="capabilities-header-wrap">
+        <span class="commercial-eyebrow">Our Consulting Capabilities</span>
+        <h2 class="commercial-heading-serif">Precision Solutions for Corporate &amp; Institutional Clients</h2>
+      </div>
+
+      <div class="capabilities-grid-4">
+        <!-- Card 1 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="cap-title">Location Benchmarking</h3>
+            <p class="cap-desc">Comparing connectivity, talent catchment pools, civic infrastructure, and TCO across key IT corridors.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/advisory-cap-1.jpg" alt="Location Benchmarking" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3 class="cap-title">Valuation &amp; Feasibility</h3>
+            <p class="cap-desc">Rigorous discounted cash flow (DCF) modeling, cap rate evaluations, and replacement cost benchmarks.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/advisory-cap-2.jpg" alt="Valuation & Feasibility" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3 class="cap-title">Asset Repositioning</h3>
+            <p class="cap-desc">Advising property owners on floor-plate optimization, amenity upgrades, and tenant-mix to maximize yields.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/advisory-cap-3.jpg" alt="Landlord Asset Repositioning" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            </div>
+            <h3 class="cap-title">Legal Due Diligence</h3>
+            <p class="cap-desc">Comprehensive title verification, encumbrance checks, Telangana RERA audits, and regulatory compliance.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/advisory-cap-4.jpg" alt="Legal & Regulatory Due Diligence" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED ADVISORY ENGAGEMENTS (LIGHT) -->
+  <section class="featured-opportunities-light">
+    <div class="container">
+      <div class="featured-header-row">
+        <div>
+          <h2 class="commercial-heading-serif">Featured Advisory Engagements</h2>
+        </div>
+        <div>
+          <a href="/contact.html" class="view-all-link">
+            <span>Request Strategic Proposal</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="properties-grid-3">
+        <!-- Showcase Card 1 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/advisory-show-1.jpg" alt="Enterprise Campus Relocation" loading="lazy">
+            <span class="prop-badge-loc">HITEC CITY</span>
+          </div>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">Enterprise Campus Relocation</h3>
+            <p class="prop-subtitle-lux">Headcount consolidation &amp; TCO analysis</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>1,50,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>18% Cost Reduction</span>
+              </div>
+            </div>
+            <button class="prop-btn-gold" data-open-visit-modal data-project="Advisory Case: HITEC City Campus Relocation">
+              <span>View Case Brief</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Showcase Card 2 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/advisory-show-2.jpg" alt="Commercial Twin Tower Feasibility" loading="lazy">
+            <span class="prop-badge-loc">FINANCIAL DISTRICT</span>
+          </div>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">Twin Tower Feasibility Study</h3>
+            <p class="prop-subtitle-lux">Highest &amp; best use asset modeling</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>45-Storey Tower</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>Institutional Master Plan</span>
+              </div>
+            </div>
+            <button class="prop-btn-gold" data-open-visit-modal data-project="Advisory Case: Financial District Twin Tower Feasibility">
+              <span>View Case Brief</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Showcase Card 3 -->
+        <div class="prop-card-lux">
+          <div class="prop-img-box">
+            <img src="/assets/images/advisory-show-3.jpg" alt="Mixed-Use Promenade Repositioning" loading="lazy">
+            <span class="prop-badge-loc">GACHIBOWLI</span>
+          </div>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">Promenade Repositioning</h3>
+            <p class="prop-subtitle-lux">Retail concourse re-tenanting strategy</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>80,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>24% Yield Uplift</span>
+              </div>
+            </div>
+            <button class="prop-btn-gold" data-open-visit-modal data-project="Advisory Case: Gachibowli Promenade Repositioning">
+              <span>View Case Brief</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. THE STRATEGIC ADVISORY FRAMEWORK (DARK) -->
+  <section class="leasing-lifecycle-dark">
+    <div class="container">
+      <h2 class="lifecycle-title">The Dhara Strategic Advisory Framework</h2>
+
+      <div class="lifecycle-timeline-row">
+        <!-- Step 1 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          </div>
+          <div class="lifecycle-step-number">01</div>
+          <h3 class="lifecycle-step-title">Objective Clarification</h3>
+          <p class="lifecycle-step-desc">Aligning space needs with corporate headcount and capital goals.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <div class="lifecycle-step-number">02</div>
+          <h3 class="lifecycle-step-title">Micro-Market Intel</h3>
+          <p class="lifecycle-step-desc">Benchmarking upcoming supply pipelines and competitive rent trends.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="lifecycle-step-number">03</div>
+          <h3 class="lifecycle-step-title">Risk Sensitivity</h3>
+          <p class="lifecycle-step-desc">Stress-testing agreements against volatility, lock-ins, and penalties.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div class="lifecycle-step-number">04</div>
+          <h3 class="lifecycle-step-title">Financial Modeling</h3>
+          <p class="lifecycle-step-desc">DCF valuation modeling, TCO projections, and capital expenditure audits.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="lifecycle-step-number">05</div>
+          <h3 class="lifecycle-step-title">Execution Oversight</h3>
+          <p class="lifecycle-step-desc">Steering negotiations to achieve below-market rates and optimal covenants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ENTERPRISE CONSULTATION BANNER -->
+  <section class="commercial-consultation-section">
+    <div class="container">
+      <div class="consultation-box">
+        <div class="consultation-content">
+          <h3>Request a Strategic Real Estate Advisory Session</h3>
+          <p>
+            Connect with our directors for a confidential briefing on micro-market yields, corporate relocation analysis, or portfolio repositioning.
+          </p>
+        </div>
+        <div class="consultation-actions">
+          <button class="btn btn-primary" data-open-visit-modal data-project="Strategic Advisory &amp; Consulting Brief">
+            <span>Book Consultation</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <a href="/contact.html" class="btn-luxury-outline">
+            Contact Advisory Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+      <!-- Site Footer (Deep Navy with Golden Skyline Watermark & Exact Visible Logo) -->
+  <footer class="site-footer-prime">
+    <!-- Golden Skyline Line-Art Watermark on the Right -->
+    <img src="/assets/images/dhara-prime-skyline.png" alt="Hyderabad Skyline" class="footer-skyline-watermark-prime" loading="lazy">
+
+    <div class="container">
+      <div class="footer-grid-prime">
+        <!-- Col 1: Exact Brand Identity -->
+        <div>
+          <a href="/" style="display: inline-block;">
+            <img src="/assets/images/dhara-prime-horizontal-dark.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="footer-logo-img-prime">
+          </a>
+          <p class="footer-brand-p-prime">
+            Dhara Prime Realty is a premier Hyderabad-based real estate consultancy delivering trusted commercial leasing, luxury residences and strategic asset advisory.
+          </p>
+          <div class="footer-founder-prime">
+            <span class="founder-label">Connect with a </span><span class="founder-name">real estate consultant.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title-prime">Quick Links</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/" class="footer-nav-link-prime">Home</a>
+            <a href="/about.html" class="footer-nav-link-prime">About Us</a>
+            <a href="/services.html" class="footer-nav-link-prime">Services</a>
+            <a href="/projects.html" class="footer-nav-link-prime">Projects</a>
+            <a href="/contact.html" class="footer-nav-link-prime">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Our Services -->
+        <div>
+          <h4 class="footer-col-title-prime">Our Services</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/service-commercial.html" class="footer-nav-link-prime">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="footer-nav-link-prime">Residential Services</a>
+            <a href="/service-investments.html" class="footer-nav-link-prime">Investment Services</a>
+            <a href="/service-mandates.html" class="footer-nav-link-prime">Exclusive Mandates</a>
+            <a href="/service-marketing.html" class="footer-nav-link-prime">Property Marketing</a>
+            <a href="/service-advisory.html" class="footer-nav-link-prime">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="footer-nav-link-prime">Transaction Support</a>
+            <a href="/service-post-care.html" class="footer-nav-link-prime">Post-Transaction Care</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div>
+          <h4 class="footer-col-title-prime">Contact Us</h4>
+          <div class="footer-contact-item-prime footer-contact-address-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/></svg>
+            <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Mayfair Gardens, Banjara Hills in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+918317604342" class="footer-tel-link" data-phone="+918317604342" data-display="+91 83176 04342" title="Call +91 83176 04342">+91 83176 04342</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+919963740709" class="footer-tel-link" data-phone="+919963740709" data-display="+91 99637 40709" title="Call +91 99637 40709">+91 99637 40709</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info.dharaprimereality@gmail.com" class="footer-email-link" data-email="info.dharaprimereality@gmail.com" title="Open Gmail for info.dharaprimereality@gmail.com">info.dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:dharaprimereality@gmail.com" class="footer-email-link" data-email="dharaprimereality@gmail.com" title="Open Gmail for dharaprimereality@gmail.com">dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-social-row-prime">
+            <a href="https://facebook.com" target="_blank" class="footer-social-icon-prime" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon-prime" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon-prime" aria-label="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon-prime" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19a2.506 2.506 0 0 0-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42c-.87.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.41 4.81c.23.86.9 1.54 1.77 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.506 2.506 0 0 0 1.76-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-prime">
+        <div>&copy; 2026 Dhara Prime Realty. All Rights Reserved.</div>
+        <div style="color: rgba(247, 245, 240, 0.65);">Designed and Developed by Appdecs</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schedule Site Visit Modal -->
+  <div class="modal-backdrop" id="visitModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <span class="section-tag" style="margin-bottom: 8px;">Strategic Briefing</span>
+      <h3 style="font-size: 1.8rem; margin-bottom: 6px;">Schedule an Advisory Consultation</h3>
+      <p style="color: var(--gold-light); font-weight: 600; margin-bottom: 20px;" id="visitProjectTitle">Select Consultation</p>
+
+      <form data-handle-submit>
+        <input type="hidden" name="project" value="">
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input type="text" class="form-control" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Corporate Email Address *</label>
+          <input type="email" class="form-control" placeholder="you@company.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number *</label>
+          <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Consultation Requirement</label>
+          <input type="text" class="form-control" placeholder="e.g. Occupier Relocation / Valuation Feasibility">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Confirm Advisory Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918317604342?text=Hello%20Dhara%20Realtors,%20I%20would%20like%20to%20inquire%20about%20Advisory%20Services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

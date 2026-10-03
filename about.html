@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Dhara Prime Realty - Real Estate Consultant Hyderabad</title>
+  <meta name="description" content="Discover Dhara Prime Realty, Hyderabad's trusted commercial and luxury real estate firm founded in 2025 by Rajasekhar Sandyapaga. Delivering institutional-grade advisory, corporate leasing, and strategic property investments.">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:4px;">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034
+        </span>
+        <span class="top-badge">Corporate &amp; Advisory Heritage</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:info.dharaprimereality@gmail.com">info.dharaprimereality@gmail.com</a>
+        <a href="tel:+918317604342">+91 83176 04342</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-wrap" aria-label="DHARA PRIME REALTY Home">
+        <img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="header-logo">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link active">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/services.html" class="nav-link nav-link-dropdown">
+            Services
+            <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/service-commercial.html" class="dropdown-item">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="dropdown-item">Residential Services</a>
+            <a href="/service-investments.html" class="dropdown-item">Investment Services</a>
+            <a href="/service-mandates.html" class="dropdown-item">Mandates</a>
+            <a href="/service-marketing.html" class="dropdown-item">Property Marketing</a>
+            <a href="/service-advisory.html" class="dropdown-item">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="dropdown-item">Transaction Support</a>
+            <a href="/service-post-care.html" class="dropdown-item">Post-Transaction Care</a>
+          </div>
+        </div>
+        <a href="/projects.html" class="nav-link">Projects</a>
+        <a href="/contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact.html" class="btn btn-primary header-cta">Get in Touch &rarr;</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="/" class="drawer-logo-link" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;"><img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY" class="drawer-logo" style="height: 38px;"></a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="drawer-close" id="drawerClose">&times;</button>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="/" class="drawer-link">Home</a>
+      <a href="/about.html" class="drawer-link active">About Us</a>
+      
+      <div class="drawer-dropdown-parent">
+        <button class="drawer-dropdown-toggle">
+          <span>Services</span>
+          <svg class="drawer-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="drawer-submenu">
+          <a href="/service-commercial.html" class="drawer-sublink">&bull; Commercial Leasing &amp; Sales</a>
+          <a href="/service-residential.html" class="drawer-sublink">&bull; Residential Services</a>
+          <a href="/service-investments.html" class="drawer-sublink">&bull; Investment Services</a>
+          <a href="/service-mandates.html" class="drawer-sublink">&bull; Mandates</a>
+          <a href="/service-marketing.html" class="drawer-sublink">&bull; Property Marketing</a>
+          <a href="/service-advisory.html" class="drawer-sublink">&bull; Advisory &amp; Consulting</a>
+          <a href="/service-transaction.html" class="drawer-sublink">&bull; Transaction Support</a>
+          <a href="/service-post-care.html" class="drawer-sublink">&bull; Post-Transaction Care</a>
+        </div>
+      </div>
+      <a href="/projects.html" class="drawer-link">Projects</a>
+      <a href="/contact.html" class="drawer-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- 1. ABOUT HERO (Cinematic Full-Width with Motto Emblem) -->
+  <section class="about-hero-prime">
+    <div class="container">
+      <div class="about-hero-grid">
+        <div>
+          <span class="about-hero-tag">OUR STORY</span>
+          <h1 class="about-hero-title">
+            About
+            <span class="gold-accent">Dhara Prime Realty</span>
+          </h1>
+          <p class="about-hero-desc">
+            Built on trust, driven by value, committed to your real estate success.
+          </p>
+          <div class="about-hero-breadcrumb">
+            <a href="/">Home</a>
+            <span style="color: var(--gold-primary);">&rarr;</span>
+            <span style="color: var(--gold-light); font-weight: 600;">About Us</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-hero-showcase">
+            <div class="about-hero-showcase-frame">
+              <img src="/assets/images/dhara-prime-hero-skyline.jpg" alt="Hyderabad Western Corridor Commercial Skyline" class="about-hero-showcase-img">
+              <div class="about-hero-showcase-overlay"></div>
+              <div class="about-hero-showcase-pill">
+                <span class="pulse-dot"></span>
+                <span>HYDERABAD COMMERCIAL HUB</span>
+              </div>
+            </div>
+            <div class="about-hero-showcase-badge">
+              <img src="/assets/images/dhara-prime-horizontal-dark.png" alt="Dhara Prime Realty" class="about-hero-showcase-logo">
+              <div class="about-hero-showcase-motto">
+                <span>PEOPLE</span>
+                <span class="motto-divider">&bull;</span>
+                <span>PROPERTIES</span>
+                <span class="motto-divider">&bull;</span>
+                <span>POSSIBILITIES</span>
+              </div>
+              <div class="about-hero-showcase-sub">
+                Commercial Real Estate Consultant &bull; Western Corridor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WHO WE ARE (Redesigned Commercial Advisory Introduction) -->
+  <section class="about-who-section">
+    <!-- Subtle Architectural Line-Art Watermark in Background -->
+    <div class="who-skyline-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 320V260H35V230H70V260H95V200H130V260H160V180H210V260H240V220H280V260H310V160H365V260H400V210H445V260H480V140H530V260H565V190H610V260H650V120H720V260H755V180H805V260H840V150H895V260H930V205H975V260H1015V130H1075V260H1110V175H1160V260H1200V155H1255V260H1290V220H1335V260H1375V170H1415V260H1440V320H0Z" stroke="#D4A72C" stroke-opacity="0.14" stroke-width="1.2" fill="none"/>
+        <path d="M25 260V190H55V260M110 200V150H145V200M180 180V120H220V180M325 160V100H375V160M495 140V80H545V140M665 120V60H735V120M855 150V90H910V150M1030 130V70H1090V130M1215 155V110H1270V155M1385 170V130H1425V170" stroke="#062B5C" stroke-opacity="0.10" stroke-width="1" fill="none"/>
+        <line x1="0" y1="260" x2="1440" y2="260" stroke="#D4A72C" stroke-opacity="0.22" stroke-width="1.2"/>
+        <path d="M175 140H205M175 155H205M175 170H205M335 120H365M335 135H365M335 150H365M505 100H535M505 115H535M505 130H535M675 80H715M675 95H715M675 110H715M1045 90H1080M1045 105H1080M1045 120H1080" stroke="#D4A72C" stroke-opacity="0.18" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="container who-container-relative">
+      <div class="about-who-grid">
+        <!-- Left: Narrative & 3 Core Values -->
+        <div class="who-content-col">
+          <span class="about-section-tag-gold">&mdash; WHO WE ARE</span>
+          <h2 class="about-section-heading who-main-title">
+            Built on Trust, Precision, and<br>Unwavering Integrity
+          </h2>
+          <p class="about-lead-p who-lead-text">
+            Dhara Prime Realty is a specialized commercial real estate firm based in Hyderabad, dedicated to corporate leasing, strategic property sales, and high-yield investment advisory.
+          </p>
+          <p class="about-narrative-p who-body-text">
+            Founded in <strong>2025 by Rajasekhar Sandyapaga</strong>, the firm was conceived to solve the fundamental frictions in commercial real estate through a transparent, data-driven and client-first approach.
+          </p>
+          <p class="about-narrative-p who-body-text">
+            By integrating hyper-local market intelligence across Hyderabad's western corridor, including <strong>HITEC City, Financial District, Gachibowli, Kokapet, and Bachupally</strong>, we enable clients to make informed property decisions with confidence.
+          </p>
+
+          <!-- 3 Value Highlights -->
+          <div class="who-values-strip">
+            <div class="who-value-item">
+              <div class="who-value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"></path>
+                  <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.8-2.8L15 14"></path>
+                  <path d="m2 13 4.4-4.4a2 2 0 0 1 2.8 0L12 11"></path>
+                  <path d="m18 10 2.2-2.2a2 2 0 0 0-2.8-2.8L13 9"></path>
+                </svg>
+              </div>
+              <h4 class="who-value-title">Client-Centric<br>Approach</h4>
+            </div>
+
+            <div class="who-value-divider" aria-hidden="true"></div>
+
+            <div class="who-value-item">
+              <div class="who-value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                  <path d="M3 20h18"></path>
+                  <path d="m4 10 6-6 4 4 6-6"></path>
+                  <polyline points="16 2 20 2 20 6"></polyline>
+                </svg>
+              </div>
+              <h4 class="who-value-title">Data-Driven<br>Decisions</h4>
+            </div>
+
+            <div class="who-value-divider" aria-hidden="true"></div>
+
+            <div class="who-value-item">
+              <div class="who-value-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <h4 class="who-value-title">Long-Term<br>Partnerships</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Hyderabad Commercial Property Showcase -->
+        <div class="who-showcase-col">
+          <div class="who-showcase-container">
+            <!-- Subtle Gold Backdrop Panel for depth -->
+            <div class="who-showcase-backdrop" aria-hidden="true"></div>
+
+            <!-- Grade-A Office Building Photograph -->
+            <div class="who-property-frame">
+              <img src="/assets/images/about-commercial-development.jpg" alt="Modern Hyderabad Commercial Real Estate Development - Grade-A Glass Tower" class="who-property-img" loading="lazy">
+            </div>
+
+            <!-- Overlapping Navy Statistics Panel -->
+            <div class="who-navy-stats-panel">
+              <!-- Stat 1 -->
+              <div class="who-stat-row">
+                <div class="who-stat-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <line x1="8" y1="6" x2="8.01" y2="6"></line>
+                    <line x1="16" y1="6" x2="16.01" y2="6"></line>
+                    <line x1="12" y1="6" x2="12.01" y2="6"></line>
+                    <line x1="8" y1="10" x2="8.01" y2="10"></line>
+                    <line x1="16" y1="10" x2="16.01" y2="10"></line>
+                    <line x1="12" y1="10" x2="12.01" y2="10"></line>
+                    <line x1="8" y1="14" x2="8.01" y2="14"></line>
+                    <line x1="16" y1="14" x2="16.01" y2="14"></line>
+                    <line x1="12" y1="14" x2="12.01" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="who-stat-info">
+                  <div class="who-stat-number" data-target="238" data-suffix="+">238+</div>
+                  <div class="who-stat-label">Transactions<br>Completed</div>
+                </div>
+              </div>
+
+              <!-- Stat 2 -->
+              <div class="who-stat-row">
+                <div class="who-stat-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="who-stat-info">
+                  <div class="who-stat-number" data-target="43" data-suffix="%">43%</div>
+                  <div class="who-stat-label">Client<br>Retention Rate</div>
+                </div>
+              </div>
+
+              <!-- Stat 3 -->
+              <div class="who-stat-row">
+                <div class="who-stat-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                    <polyline points="2 17 6 13 12 17 22 7"></polyline>
+                    <polyline points="17 7 22 7 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="who-stat-info">
+                  <div class="who-stat-number" data-target="2" data-suffix="+">2+</div>
+                  <div class="who-stat-label">Years of Market<br>Expertise</div>
+                </div>
+              </div>
+
+              <!-- Stat 4 -->
+              <div class="who-stat-row">
+                <div class="who-stat-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="who-stat-info">
+                  <div class="who-stat-number" data-target="20" data-suffix="%">20%</div>
+                  <div class="who-stat-label">Year-on-Year<br>Growth</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Small Floating White Card (Bottom-Right) -->
+            <div class="who-focus-card">
+              <span class="who-focus-tag">&mdash; OUR FOCUS</span>
+              <p class="who-focus-desc">Creating high-value opportunities across Hyderabad’s key business districts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. FOUNDER QUOTE (Large Gold Quote & Attribution) -->
+  <section class="founder-quote-section">
+    <div class="container">
+      <div class="founder-quote-box">
+        <span class="founder-quote-mark">&ldquo;</span>
+        <blockquote class="founder-quote-text">
+          To create real value for our clients and safeguard your enterprise’s long-term interests, our journey isn’t complete.
+        </blockquote>
+        <div class="founder-quote-attribution">
+          <div class="founder-quote-author">— Rajasekhar Sandyapaga</div>
+          <div class="founder-quote-title">Founder, Dhara Prime Realty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VISION / MISSION / VALUES (Three Cards on Warm White Background) -->
+  <section class="principles-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="about-section-tag-gold" style="justify-content: center;">OUR GUIDING PRINCIPLES</span>
+        <h2 class="about-section-heading" style="font-size: 2.4rem; margin-bottom: 12px;">Strategic Foundations</h2>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
+          How we empower businesses, institutional investors, and discerning clients across Hyderabad.
+        </p>
+      </div>
+
+      <div class="principles-grid-3">
+        <!-- Vision -->
+        <div class="principle-card">
+          <div class="principle-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          </div>
+          <h3 class="principle-card-title">Our Vision</h3>
+          <p class="principle-card-desc">
+            To become Hyderabad's most trusted and authoritative commercial real estate partner for businesses and investors by consistently delivering value-driven, transparent, and legally sound solutions.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="principle-card">
+          <div class="principle-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="principle-card-title">Our Mission</h3>
+          <p class="principle-card-desc">
+            To simplify the property lifecycle from requirement discovery to closing with rigorous due diligence, strategic advisory and end-to-end support — ensuring our clients save time, avoid risk, and maximize returns.
+          </p>
+        </div>
+
+        <!-- Values -->
+        <div class="principle-card">
+          <div class="principle-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="principle-card-title">Our Core Values</h3>
+          <p class="principle-card-desc">
+            Transparency, market intelligence, client-first mindset, ethical practices and long-term relationships form the foundation of everything we do at Dhara Prime Realty.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FOUR PILLARS (Deep Navy Section with Skyline Watermark) -->
+  <section class="pillars-section">
+    <img src="/assets/images/dhara-prime-skyline.png" alt="Hyderabad Skyline Art" class="pillars-skyline-bg" loading="lazy">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="about-hero-tag">OUR PRINCIPLES</span>
+        <h2 class="about-section-heading" style="color: #FFFFFF; font-size: 2.6rem; margin-bottom: 14px;">
+          The Four Pillars of Dhara Prime Realty
+        </h2>
+        <p style="color: rgba(247, 245, 240, 0.85); font-size: 1.05rem; line-height: 1.6;">
+          Every mandate we manage is anchored in these bedrock principles.
+        </p>
+      </div>
+
+      <div class="pillars-grid-4">
+        <!-- 01 Client-First Approach -->
+        <div class="pillar-card">
+          <div class="pillar-top-row">
+            <span class="pillar-number">01</span>
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="pillar-title">Client-First Approach</h3>
+          <p class="pillar-desc">
+            We prioritize our clients' goals and build long-term relationships based on trust and results.
+          </p>
+        </div>
+
+        <!-- 02 Market Intelligence -->
+        <div class="pillar-card">
+          <div class="pillar-top-row">
+            <span class="pillar-number">02</span>
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+          </div>
+          <h3 class="pillar-title">Market Intelligence</h3>
+          <p class="pillar-desc">
+            Deep local insights and data-driven strategies for the right opportunities at the right time.
+          </p>
+        </div>
+
+        <!-- 03 Transparent Transactions -->
+        <div class="pillar-card">
+          <div class="pillar-top-row">
+            <span class="pillar-number">03</span>
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3 class="pillar-title">Transparent Transactions</h3>
+          <p class="pillar-desc">
+            Clear communication, honest advisory and complete transparency at every step.
+          </p>
+        </div>
+
+        <!-- 04 End-to-End Support -->
+        <div class="pillar-card">
+          <div class="pillar-top-row">
+            <span class="pillar-number">04</span>
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="pillar-title">End-to-End Support</h3>
+          <p class="pillar-desc">
+            From property search to final handover, provide complete guidance and support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. COMPANY STATISTICS STRIP -->
+  <section class="about-stats-strip">
+    <div class="container">
+      <div class="about-stats-grid">
+        <div class="about-stat-item">
+          <div class="about-stat-num" data-target="238" data-suffix="+">238+</div>
+          <div class="about-stat-lbl">Transactions Completed</div>
+        </div>
+        <div class="about-stat-item">
+          <div class="about-stat-num" data-target="43" data-suffix="%">43%</div>
+          <div class="about-stat-lbl">Client Retention Rate</div>
+        </div>
+        <div class="about-stat-item">
+          <div class="about-stat-num" data-target="2" data-suffix="+">2+</div>
+          <div class="about-stat-lbl">Years of Strategic Market Expertise</div>
+        </div>
+        <div class="about-stat-item">
+          <div class="about-stat-num" data-target="20" data-suffix="%">20%</div>
+          <div class="about-stat-lbl">Year-on-Year Growth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. MEET OUR FOUNDER (Dedicated Section with User-Supplied Photo) -->
+  <section class="founder-feature-section">
+    <div class="container">
+      <div style="margin-bottom: 40px;">
+        <span class="about-section-tag-gold">MEET OUR FOUNDER</span>
+      </div>
+
+      <div class="founder-feature-grid">
+        <!-- Left: Founder Portrait -->
+        <div>
+          <div class="founder-feature-photo-box">
+            <img src="/assets/images/founder-rajasekhar.jpg" alt="Rajasekhar Sandyapaga - Founder & Managing Partner" class="founder-feature-photo">
+          </div>
+        </div>
+
+        <!-- Right: Introduction & Bio -->
+        <div class="founder-feature-content">
+          <h2 class="founder-feature-name">Rajasekhar Sandyapaga</h2>
+          <div class="founder-feature-role">Founder &amp; Managing Partner, Dhara Prime Realty</div>
+          
+          <p class="founder-feature-bio">
+            With a deep understanding of Hyderabad's real estate landscape and a commitment to integrity, Rajasekhar Sandyapaga founded Dhara Prime Realty to create a more transparent, professional, and client-centric real estate advisory firm. His vision is to help businesses and investors make smarter property decisions with confidence.
+          </p>
+
+          <div class="founder-feature-quote-card">
+            &ldquo;Integrity and fiduciary responsibility are non-negotiable. We treat every client's capital and requirement with the same diligence as our own.&rdquo;
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOUNDER EXPERTISE (Four Minimalist Gold Icon Cards) -->
+  <section class="expertise-section">
+    <div class="container">
+      <div class="expertise-grid-4">
+        <!-- Expertise 1 -->
+        <div class="expertise-card">
+          <div class="expertise-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <h3 class="expertise-title">Strategic Advisory</h3>
+          <p class="expertise-desc">Insights-driven property strategies for better decisions.</p>
+        </div>
+
+        <!-- Expertise 2 -->
+        <div class="expertise-card">
+          <div class="expertise-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="expertise-title">Investment Consulting</h3>
+          <p class="expertise-desc">High-yield opportunities across key Hyderabad locations.</p>
+        </div>
+
+        <!-- Expertise 3 -->
+        <div class="expertise-card">
+          <div class="expertise-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <h3 class="expertise-title">Property Transactions</h3>
+          <p class="expertise-desc">End-to-end support with complete due diligence.</p>
+        </div>
+
+        <!-- Expertise 4 -->
+        <div class="expertise-card">
+          <div class="expertise-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <h3 class="expertise-title">Market Research</h3>
+          <p class="expertise-desc">Data-backed insights on emerging markets and trends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CTA BANNER (Executive Advisory Consultation) -->
+  <section class="section-sm" style="background: var(--navy-deep); position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="cta-banner" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 167, 44, 0.35);">
+        <span class="about-hero-tag" style="justify-content: center;">EXECUTIVE ADVISORY</span>
+        <h2 style="font-size: 2.6rem; color: #FFFFFF; margin-bottom: 16px;">Experience the Dhara Prime Realty Standard</h2>
+        <p style="color: rgba(247, 245, 240, 0.85); max-width: 650px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.65;">
+          Schedule an executive briefing with our founder and commercial advisory team to discuss your corporate expansion or property acquisition.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/contact.html" class="btn btn-primary btn-lg">Book Advisory Session &rarr;</a>
+          <a href="/services.html" class="btn btn-outline-gold btn-lg">Explore Services &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Deep Navy with Golden Skyline Watermark & Exact Visible Logo) -->
+  <footer class="site-footer-prime">
+    <!-- Golden Skyline Line-Art Watermark on the Right -->
+    <img src="/assets/images/dhara-prime-skyline.png" alt="Hyderabad Skyline" class="footer-skyline-watermark-prime" loading="lazy">
+
+    <div class="container">
+      <div class="footer-grid-prime">
+        <!-- Col 1: Exact Brand Identity -->
+        <div>
+          <a href="/" style="display: inline-block;">
+            <img src="/assets/images/dhara-prime-horizontal-dark.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="footer-logo-img-prime">
+          </a>
+          <p class="footer-brand-p-prime">
+            Dhara Prime Realty is a premier Hyderabad-based real estate consultancy delivering trusted commercial leasing, luxury residences and strategic asset advisory.
+          </p>
+          <div class="footer-founder-prime">
+            <span class="founder-label">Connect with a </span><span class="founder-name">real estate consultant.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title-prime">Quick Links</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/" class="footer-nav-link-prime">Home</a>
+            <a href="/about.html" class="footer-nav-link-prime">About Us</a>
+            <a href="/services.html" class="footer-nav-link-prime">Services</a>
+            <a href="/projects.html" class="footer-nav-link-prime">Projects</a>
+            <a href="/contact.html" class="footer-nav-link-prime">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Our Services -->
+        <div>
+          <h4 class="footer-col-title-prime">Our Services</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/service-commercial.html" class="footer-nav-link-prime">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="footer-nav-link-prime">Residential Services</a>
+            <a href="/service-investments.html" class="footer-nav-link-prime">Investment Services</a>
+            <a href="/service-mandates.html" class="footer-nav-link-prime">Exclusive Mandates</a>
+            <a href="/service-marketing.html" class="footer-nav-link-prime">Property Marketing</a>
+            <a href="/service-advisory.html" class="footer-nav-link-prime">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="footer-nav-link-prime">Transaction Support</a>
+            <a href="/service-post-care.html" class="footer-nav-link-prime">Post-Transaction Care</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div>
+          <h4 class="footer-col-title-prime">Contact Us</h4>
+          <div class="footer-contact-item-prime footer-contact-address-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/></svg>
+            <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Mayfair Gardens, Banjara Hills in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+918317604342" class="footer-tel-link" data-phone="+918317604342" data-display="+91 83176 04342" title="Call +91 83176 04342">+91 83176 04342</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+919963740709" class="footer-tel-link" data-phone="+919963740709" data-display="+91 99637 40709" title="Call +91 99637 40709">+91 99637 40709</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info.dharaprimereality@gmail.com" class="footer-email-link" data-email="info.dharaprimereality@gmail.com" title="Open Gmail for info.dharaprimereality@gmail.com">info.dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:dharaprimereality@gmail.com" class="footer-email-link" data-email="dharaprimereality@gmail.com" title="Open Gmail for dharaprimereality@gmail.com">dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-social-row-prime">
+            <a href="https://facebook.com" target="_blank" class="footer-social-icon-prime" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon-prime" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon-prime" aria-label="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon-prime" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19a2.506 2.506 0 0 0-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42c-.87.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.41 4.81c.23.86.9 1.54 1.77 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.506 2.506 0 0 0 1.76-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-prime">
+        <div>&copy; 2026 Dhara Prime Realty. All Rights Reserved.</div>
+        <div style="color: rgba(247, 245, 240, 0.65);">Designed and Developed by Appdecs</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/918317604342?text=Hello%20Dhara%20Prime%20Realty,%20I%20would%20like%20to%20know%20more%20about%20your%20commercial%20and%20luxury%20advisory%20services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

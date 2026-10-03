@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Real Estate Services | Dhara Prime Realty Hyderabad</title>
+  <meta name="description" content="Premier commercial real estate consultancy in Hyderabad. Grade-A office leasing, corporate sales, and retail showrooms across HITEC City, Financial District, and Gachibowli.">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" title="Open in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a></span>
+        <span class="top-badge">Commercial Specialization</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:dhararealtors09@gmail.com">dhararealtors09@gmail.com</a>
+        <a href="tel:+918317604342">+91 8317604342</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation with Dropdown -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-wrap" aria-label="DHARA PRIME REALTY Home">
+        <img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="header-logo">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/services.html" class="nav-link nav-link-dropdown active">
+            Services
+            <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/service-commercial.html" class="dropdown-item active">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="dropdown-item">Residential Services</a>
+            <a href="/service-investments.html" class="dropdown-item">Investment Services</a>
+            <a href="/service-mandates.html" class="dropdown-item">Mandates</a>
+            <a href="/service-marketing.html" class="dropdown-item">Property Marketing</a>
+            <a href="/service-advisory.html" class="dropdown-item">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="dropdown-item">Transaction Support</a>
+            <a href="/service-post-care.html" class="dropdown-item">Post-Transaction Care</a>
+          </div>
+        </div>
+        <a href="/projects.html" class="nav-link">Projects</a>
+        <a href="/contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/contact.html" class="btn btn-primary header-cta">
+          Get in Touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="/" class="drawer-logo-link" style="display: flex; align-items: center; text-decoration: none; cursor: pointer;"><img src="/assets/images/dhara-prime-horizontal.png" alt="DHARA PRIME REALTY" class="drawer-logo" style="height: 38px;"></a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="drawer-close" id="drawerClose">&times;</button>
+      </div>
+    </div>
+    <div class="drawer-links">
+      <a href="/" class="drawer-link">Home</a>
+      <a href="/about.html" class="drawer-link">About Us</a>
+      
+      <!-- Mobile Submenu Accordion -->
+      <div class="drawer-dropdown-parent">
+        <button class="drawer-dropdown-toggle active">
+          <span>Services</span>
+          <svg class="drawer-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transform:rotate(180deg);"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="drawer-submenu open">
+          <a href="/service-commercial.html" class="drawer-sublink active">&bull; Commercial Leasing &amp; Sales</a>
+          <a href="/service-residential.html" class="drawer-sublink">&bull; Residential Services</a>
+          <a href="/service-investments.html" class="drawer-sublink">&bull; Investment Services</a>
+          <a href="/service-mandates.html" class="drawer-sublink">&bull; Mandates</a>
+          <a href="/service-marketing.html" class="drawer-sublink">&bull; Property Marketing</a>
+          <a href="/service-advisory.html" class="drawer-sublink">&bull; Advisory &amp; Consulting</a>
+          <a href="/service-transaction.html" class="drawer-sublink">&bull; Transaction Support</a>
+          <a href="/service-post-care.html" class="drawer-sublink">&bull; Post-Transaction Care</a>
+        </div>
+      </div>
+      <a href="/projects.html" class="drawer-link">Projects</a>
+      <a href="/contact.html" class="drawer-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- 1. FULL-SCREEN CINEMATIC MINIMAL HERO -->
+  <section class="hero-commercial-fullscreen">
+    <div class="container">
+      <div class="hero-commercial-content">
+        <h1 class="hero-commercial-title">
+          Commercial<br>Real Estate <span class="gold-accent">Services</span>
+        </h1>
+        <div class="hero-gold-line"></div>
+        <p class="hero-commercial-tagline">SPACES FOR A BRIGHTER TOMORROW</p>
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Indicator -->
+    <a href="#commercialContent" class="hero-scroll-prompt" aria-label="Scroll to content">
+      <span>SCROLL</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+  </section>
+
+  <!-- 2. FOUR-ITEM VALUE & TRUST STRIP -->
+  <section class="trust-strip-bar" id="commercialContent">
+    <div class="container">
+      <div class="trust-strip-grid">
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"></path><path d="M9 8h1"></path><path d="M9 12h1"></path><path d="M9 16h1"></path><path d="M14 8h1"></path><path d="M14 12h1"></path><path d="M14 16h1"></path><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path></svg>
+          </div>
+          <span class="trust-strip-title">Prime Business<br>Locations</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          </div>
+          <span class="trust-strip-title">End-to-End<br>Support</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <span class="trust-strip-title">High ROI Investment<br>Opportunities</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <div class="trust-strip-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <span class="trust-strip-title">Trusted by<br>Leading Brands</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT SECTION: DRIVING BUSINESS GROWTH THROUGH STRATEGIC SPACES (LIGHT) -->
+  <section class="commercial-about-light">
+    <div class="container">
+      <div class="commercial-about-grid">
+        <!-- Content Left -->
+        <div>
+          <span class="commercial-eyebrow">About Our Service</span>
+          <h2 class="commercial-heading-serif">
+            Driving Business Growth Through <span class="gold-accent">Strategic Spaces</span>
+          </h2>
+          <p class="commercial-lead-text">
+            Dhara Prime Realty provides end-to-end commercial real estate services in Hyderabad, helping businesses find the right spaces to grow and succeed. From premium office spaces to retail showrooms and large commercial buildings, we offer the best locations with complete professional support.
+          </p>
+
+          <!-- 4 Statistics -->
+          <div class="commercial-stats-grid">
+            <div class="stat-item-luxury">
+              <div class="stat-number">2M+</div>
+              <div class="stat-desc">Sq. Ft. Transacted</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">100+</div>
+              <div class="stat-desc">Happy Clients</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">50+</div>
+              <div class="stat-desc">Premium Locations</div>
+            </div>
+            <div class="stat-item-luxury">
+              <div class="stat-number">10+</div>
+              <div class="stat-desc">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media Right with Floating Badge -->
+        <div class="about-media-frame">
+          <img src="/assets/images/commercial-skyline-about.jpg" alt="Hyderabad Skyline & Business Districts" loading="lazy">
+          <div class="about-floating-badge">
+            <img src="/assets/images/logo-emblem-dark.png" alt="Dhara Emblem" class="badge-emblem">
+            <span class="badge-text">Your Partner in Commercial Real Estate Success</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CAPABILITIES SECTION: TAILORED SOLUTIONS FOR EVERY BUSINESS NEED (DARK) -->
+  <section class="commercial-capabilities-dark">
+    <div class="container">
+      <div class="capabilities-header-wrap">
+        <span class="commercial-eyebrow">Our Commercial Capabilities</span>
+        <h2 class="commercial-heading-serif">Tailored Solutions for Every Business Need</h2>
+      </div>
+
+      <div class="capabilities-grid-4">
+        <!-- Card 1 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line><line x1="8" y1="6" x2="10" y2="6"></line><line x1="14" y1="6" x2="16" y2="6"></line><line x1="8" y1="10" x2="10" y2="10"></line><line x1="14" y1="10" x2="16" y2="10"></line><line x1="8" y1="14" x2="10" y2="14"></line><line x1="14" y1="14" x2="16" y2="14"></line></svg>
+            </div>
+            <h3 class="cap-title">Grade-A Office Spaces</h3>
+            <p class="cap-desc">Modern workspaces in prime business districts with world-class amenities.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/cap-grade-a-offices.jpg" alt="Grade-A Office Spaces" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h3 class="cap-title">Retail Showrooms</h3>
+            <p class="cap-desc">High-visibility retail spaces in high-footfall areas for maximum brand presence.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/cap-retail-showrooms.jpg" alt="Retail Showrooms" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3 class="cap-title">Commercial Buildings</h3>
+            <p class="cap-desc">Standalone and multi-tenant commercial buildings for businesses of all sizes.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/cap-commercial-buildings.jpg" alt="Commercial Buildings" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="capability-card-lux">
+          <div class="cap-card-body">
+            <div class="cap-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="cap-title">Corporate Leasing</h3>
+            <p class="cap-desc">End-to-end leasing support for IT companies, MNCs and growing businesses.</p>
+          </div>
+          <div class="cap-img-box">
+            <img src="/assets/images/cap-corporate-leasing.jpg" alt="Corporate Leasing" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED COMMERCIAL OPPORTUNITIES (LIGHT) -->
+  <section class="featured-opportunities-light">
+    <div class="container">
+      <div class="featured-header-row">
+        <div>
+          <h2 class="commercial-heading-serif">Featured Commercial Opportunities</h2>
+        </div>
+        <div>
+          <a href="/projects.html?filter=commercial" class="view-all-link">
+            <span>View All Properties</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="properties-grid-3">
+        <!-- Property Card 1 -->
+        <div class="prop-card-lux">
+          <a href="/property-detail.html?id=hitech-office" class="prop-img-box" style="display:block;">
+            <img src="/assets/images/prop-hitech-office.jpg" alt="Grade-A office space in Hitech City" loading="lazy">
+            <span class="prop-badge-loc">HITECH CITY</span>
+          </a>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">
+              <a href="/property-detail.html?id=hitech-office" style="color: inherit; text-decoration: none;">Premium Office Space</a>
+            </h3>
+            <p class="prop-subtitle-lux">Grade-A office space in Hitech City</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>25,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Immediate Possession</span>
+              </div>
+            </div>
+            <a href="/property-detail.html?id=hitech-office" class="prop-btn-gold">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Property Card 2 -->
+        <div class="prop-card-lux">
+          <a href="/property-detail.html?id=financial-commercial" class="prop-img-box" style="display:block;">
+            <img src="/assets/images/prop-financial-district.jpg" alt="Commercial Building Financial District" loading="lazy">
+            <span class="prop-badge-loc">FINANCIAL DISTRICT</span>
+          </a>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">
+              <a href="/property-detail.html?id=financial-commercial" style="color: inherit; text-decoration: none;">Commercial Building</a>
+            </h3>
+            <p class="prop-subtitle-lux">Multi-tenant commercial building</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>1,00,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Prime Location</span>
+              </div>
+            </div>
+            <a href="/property-detail.html?id=financial-commercial" class="prop-btn-gold">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Property Card 3 -->
+        <div class="prop-card-lux">
+          <a href="/property-detail.html?id=gachibowli-retail" class="prop-img-box" style="display:block;">
+            <img src="/assets/images/prop-gachibowli-retail.jpg" alt="Retail Showroom Gachibowli" loading="lazy">
+            <span class="prop-badge-loc">GACHIBOWLI</span>
+          </a>
+          <div class="prop-body-lux">
+            <h3 class="prop-title-lux">
+              <a href="/property-detail.html?id=gachibowli-retail" style="color: inherit; text-decoration: none;">Retail Showroom</a>
+            </h3>
+            <p class="prop-subtitle-lux">High-footfall retail space</p>
+            <div class="prop-specs-row">
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                <span>5,000 Sq. Ft.</span>
+              </div>
+              <div class="prop-spec-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="19" x2="20" y2="19"></line><polyline points="4 15 12 9 20 15"></polyline></svg>
+                <span>Main Road Facing</span>
+              </div>
+            </div>
+            <a href="/property-detail.html?id=gachibowli-retail" class="prop-btn-gold">
+              <span>View Details</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. THE COMMERCIAL LEASING LIFECYCLE (DARK) -->
+  <section class="leasing-lifecycle-dark">
+    <div class="container">
+      <h2 class="lifecycle-title">The Commercial Leasing Lifecycle</h2>
+
+      <div class="lifecycle-timeline-row">
+        <!-- Step 1 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <div class="lifecycle-step-number">01</div>
+          <h3 class="lifecycle-step-title">Requirement &amp; Brief</h3>
+          <p class="lifecycle-step-desc">Understanding your business goals and space requirements.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><path d="M11 8v6"></path><path d="M8 11h6"></path></svg>
+          </div>
+          <div class="lifecycle-step-number">02</div>
+          <h3 class="lifecycle-step-title">Market Analysis</h3>
+          <p class="lifecycle-step-desc">Shortlisting the best properties based on location, budget and needs.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div class="lifecycle-step-number">03</div>
+          <h3 class="lifecycle-step-title">Site Visits</h3>
+          <p class="lifecycle-step-desc">Arranging curated site visits to evaluate options.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <div class="lifecycle-step-number">04</div>
+          <h3 class="lifecycle-step-title">Negotiation</h3>
+          <p class="lifecycle-step-desc">Expert support in lease terms, pricing and deal finalization.</p>
+        </div>
+
+        <div class="lifecycle-arrow-divider">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="lifecycle-step-card">
+          <div class="lifecycle-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="lifecycle-step-number">05</div>
+          <h3 class="lifecycle-step-title">Agreement &amp; Support</h3>
+          <p class="lifecycle-step-desc">End-to-end documentation and post-lease assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ENTERPRISE COMMERCIAL CONSULTATION BANNER -->
+  <section class="commercial-consultation-section">
+    <div class="container">
+      <div class="consultation-box">
+        <div class="consultation-content">
+          <h3>Elevate Your Corporate Footprint in Hyderabad</h3>
+          <p>
+            Whether you require a Grade-A corporate headquarters, an enterprise IT campus, or a flagship retail showroom, Dhara Prime Realty delivers precision representation and market access.
+          </p>
+        </div>
+        <div class="consultation-actions">
+          <a href="/projects.html" class="btn btn-primary">
+            <span>Explore Opportunities</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button class="btn-luxury-outline" data-open-visit-modal data-project="Commercial Real Estate Advisory">
+            Talk to Our Experts
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Site Footer (Deep Navy with Golden Skyline Watermark & Exact Visible Logo) -->
+  <footer class="site-footer-prime">
+    <!-- Golden Skyline Line-Art Watermark on the Right -->
+    <img src="/assets/images/dhara-prime-skyline.png" alt="Hyderabad Skyline" class="footer-skyline-watermark-prime" loading="lazy">
+
+    <div class="container">
+      <div class="footer-grid-prime">
+        <!-- Col 1: Exact Brand Identity -->
+        <div>
+          <a href="/" style="display: inline-block;">
+            <img src="/assets/images/dhara-prime-horizontal-dark.png" alt="DHARA PRIME REALTY - Real Estate Consultant" class="footer-logo-img-prime">
+          </a>
+          <p class="footer-brand-p-prime">
+            Dhara Prime Realty is a premier Hyderabad-based real estate consultancy delivering trusted commercial leasing, luxury residences and strategic asset advisory.
+          </p>
+          <div class="footer-founder-prime">
+            <span class="founder-label">Connect with a </span><span class="founder-name">real estate consultant.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title-prime">Quick Links</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/" class="footer-nav-link-prime">Home</a>
+            <a href="/about.html" class="footer-nav-link-prime">About Us</a>
+            <a href="/services.html" class="footer-nav-link-prime">Services</a>
+            <a href="/projects.html" class="footer-nav-link-prime">Projects</a>
+            <a href="/contact.html" class="footer-nav-link-prime">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Our Services -->
+        <div>
+          <h4 class="footer-col-title-prime">Our Services</h4>
+          <div class="footer-nav-list-prime">
+            <a href="/service-commercial.html" class="footer-nav-link-prime">Commercial Leasing &amp; Sales</a>
+            <a href="/service-residential.html" class="footer-nav-link-prime">Residential Services</a>
+            <a href="/service-investments.html" class="footer-nav-link-prime">Investment Services</a>
+            <a href="/service-mandates.html" class="footer-nav-link-prime">Exclusive Mandates</a>
+            <a href="/service-marketing.html" class="footer-nav-link-prime">Property Marketing</a>
+            <a href="/service-advisory.html" class="footer-nav-link-prime">Advisory &amp; Consulting</a>
+            <a href="/service-transaction.html" class="footer-nav-link-prime">Transaction Support</a>
+            <a href="/service-post-care.html" class="footer-nav-link-prime">Post-Transaction Care</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div>
+          <h4 class="footer-col-title-prime">Contact Us</h4>
+          <div class="footer-contact-item-prime footer-contact-address-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5-2.5 2.5z"/></svg>
+            <a href="https://maps.google.com/?q=Mayfair+Gardens,+Rd+Number+12,+Banjara+Hills,+Hyderabad,+Telangana+500034" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Mayfair Gardens, Banjara Hills in Google Maps">103/A, Mayfair Gardens Road no :12 Banjarahills Hyderabad Telangana 500034</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+918317604342" class="footer-tel-link" data-phone="+918317604342" data-display="+91 83176 04342" title="Call +91 83176 04342">+91 83176 04342</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-phone-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.99c.07-.55-.38-1-1-1H4.02c-.55 0-1 .45-1 1C3.02 13.28 10.73 21 20.01 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+            <a href="tel:+919963740709" class="footer-tel-link" data-phone="+919963740709" data-display="+91 99637 40709" title="Call +91 99637 40709">+91 99637 40709</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info.dharaprimereality@gmail.com" class="footer-email-link" data-email="info.dharaprimereality@gmail.com" title="Open Gmail for info.dharaprimereality@gmail.com">info.dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-contact-item-prime footer-contact-email-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D4A72C"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:dharaprimereality@gmail.com" class="footer-email-link" data-email="dharaprimereality@gmail.com" title="Open Gmail for dharaprimereality@gmail.com">dharaprimereality@gmail.com</a>
+          </div>
+          <div class="footer-social-row-prime">
+            <a href="https://facebook.com" target="_blank" class="footer-social-icon-prime" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon-prime" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon-prime" aria-label="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon-prime" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19a2.506 2.506 0 0 0-1.76-1.77C18.26 5 12 5 12 5s-6.26 0-7.82.42c-.87.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.41 4.81c.23.86.9 1.54 1.77 1.77C5.74 19 12 19 12 19s6.26 0 7.82-.42a2.506 2.506 0 0 0 1.76-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-prime">
+        <div>&copy; 2026 Dhara Prime Realty. All Rights Reserved.</div>
+        <div style="color: rgba(247, 245, 240, 0.65);">Designed and Developed by Appdecs</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schedule Site Visit Modal (Compact, Single-Screen, No Scroll) -->
+  <div class="modal-backdrop" id="visitModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.55rem; margin-bottom: 3px; color: #12345B;">Schedule a Site Visit</h3>
+      <p style="color: var(--gold-light); font-weight: 600; font-size: 0.92rem; margin-bottom: 12px;" id="visitProjectTitle">Select Property</p>
+
+      <form data-handle-submit>
+        <input type="hidden" name="project" value="">
+        <div class="form-group" style="margin-bottom: 9px;">
+          <label class="form-label" style="font-size: 0.82rem; margin-bottom: 3px;">Full Name *</label>
+          <input type="text" name="fullName" class="form-control" style="padding: 8px 12px; font-size: 0.88rem;" placeholder="Your name" required>
+        </div>
+        <div class="form-row-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 9px;">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label" style="font-size: 0.82rem; margin-bottom: 3px;">Email Address *</label>
+            <input type="email" name="email" class="form-control" style="padding: 8px 12px; font-size: 0.88rem;" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label" style="font-size: 0.82rem; margin-bottom: 3px;">Phone / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" style="padding: 8px 12px; font-size: 0.88rem;" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+        <!-- Date & Time Picker -->
+        <div class="booking-datetime-group">
+          <div class="booking-grid">
+            <div class="booking-field">
+              <label class="form-label" for="visitDate" style="font-size: 0.82rem; margin-bottom: 3px;">Preferred Date *</label>
+              <div class="input-icon-wrapper">
+                <input 
+                  type="date" 
+                  id="visitDate" 
+                  name="visitDate" 
+                  class="booking-date-input" 
+                  required
+                >
+                <span class="custom-input-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="booking-field">
+              <label class="form-label" for="visitTime" style="font-size: 0.82rem; margin-bottom: 3px;">Preferred Time Slot *</label>
+              <div class="input-icon-wrapper select-wrapper">
+                <select id="visitTime" name="visitTime" class="booking-time-select" required>
+                  <option value="" disabled selected>Select viewing time</option>
+                  <option value="10:00 AM - 11:30 AM">10:00 AM – 11:30 AM</option>
+                  <option value="11:30 AM - 01:00 PM">11:30 AM – 01:00 PM</option>
+                  <option value="02:00 PM - 03:30 PM">02:00 PM – 03:30 PM</option>
+                  <option value="03:30 PM - 05:00 PM">03:30 PM – 05:00 PM</option>
+                  <option value="05:00 PM - 06:30 PM">05:00 PM – 06:30 PM</option>
+                  <option value="06:30 PM - 08:00 PM">06:30 PM – 08:00 PM</option>
+                </select>
+                <span class="custom-input-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 10px;">
+          <label class="form-label" style="font-size: 0.82rem; margin-bottom: 3px;">Specific Requirements (Sq.ft, Budget, Furnishing)</label>
+          <textarea name="requirements" class="form-control" rows="2" style="padding: 8px 12px; font-size: 0.88rem;" placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 4px; padding: 11px 20px; font-size: 0.92rem;">
+          Confirm Site Visit Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918317604342?text=Hello%20Dhara%20Realtors,%20I%20would%20like%20to%20inquire%20about%20Commercial%20Real%20Estate." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
