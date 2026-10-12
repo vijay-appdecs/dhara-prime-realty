@@ -1,0 +1,4 @@
+<FilesMatch "\.(json|jsonl|log|txt)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

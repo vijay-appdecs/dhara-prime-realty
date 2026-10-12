@@ -1,5 +1,37 @@
 import { resolve } from 'path';
+import fs from 'fs';
 import { defineConfig, loadEnv } from 'vite';
+
+function copyStaticDeploymentAssetsPlugin() {
+  return {
+    name: 'copy-static-deployment-assets',
+    closeBundle() {
+      const distDir = resolve(__dirname, 'dist');
+      const assetsImagesSrc = resolve(__dirname, 'assets', 'images');
+      const distAssetsImages = resolve(distDir, 'assets', 'images');
+      const distImages = resolve(distDir, 'images');
+
+      if (fs.existsSync(assetsImagesSrc)) {
+        if (!fs.existsSync(distAssetsImages)) {
+          fs.mkdirSync(distAssetsImages, { recursive: true });
+        }
+        fs.cpSync(assetsImagesSrc, distAssetsImages, { recursive: true });
+
+        if (!fs.existsSync(distImages)) {
+          fs.mkdirSync(distImages, { recursive: true });
+        }
+        fs.cpSync(assetsImagesSrc, distImages, { recursive: true });
+        console.log('✅ [Deployment Assets Plugin]: Mirrored assets/images to dist/assets/images and dist/images');
+      }
+
+      const publicHtaccess = resolve(__dirname, 'public', '.htaccess');
+      const distHtaccess = resolve(distDir, '.htaccess');
+      if (fs.existsSync(publicHtaccess) && !fs.existsSync(distHtaccess)) {
+        fs.copyFileSync(publicHtaccess, distHtaccess);
+      }
+    }
+  };
+}
 
 function whatsappApiPlugin(env) {
   return {
@@ -138,7 +170,8 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
-      whatsappApiPlugin(env)
+      whatsappApiPlugin(env),
+      copyStaticDeploymentAssetsPlugin()
     ],
   build: {
     rollupOptions: {

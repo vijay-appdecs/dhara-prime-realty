@@ -9,6 +9,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .prop-gallery-main {
+      background: #f1f5f9;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prop-gallery-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.25s ease;
+    }
+    .prop-thumb-item {
+      background: #f1f5f9;
+    }
+  </style>
 </head>
 <body>
 
@@ -164,20 +183,20 @@
       <!-- Photo Gallery -->
       <div class="prop-gallery-wrap">
         <div class="prop-gallery-main">
-          <img id="mainGalleryImg" src="/assets/images/prop-hitech-office.jpg" alt="Property Gallery Main View">
+          <img id="mainGalleryImg" src="/assets/images/prop-hitech-office.jpg" alt="Property Gallery Main View" onerror="handleGalleryImageError(this)">
         </div>
         <div class="prop-gallery-thumbs" id="galleryThumbs">
           <div class="prop-thumb-item active" onclick="switchGalleryImg('/assets/images/prop-hitech-office.jpg', this)">
-            <img src="/assets/images/prop-hitech-office.jpg" alt="Exterior Facade">
+            <img src="/assets/images/prop-hitech-office.jpg" alt="Exterior Facade" onerror="handleGalleryImageError(this)">
           </div>
           <div class="prop-thumb-item" onclick="switchGalleryImg('/assets/images/cap-grade-a-offices.jpg', this)">
-            <img src="/assets/images/cap-grade-a-offices.jpg" alt="Interior Work Floor">
+            <img src="/assets/images/cap-grade-a-offices.jpg" alt="Interior Work Floor" onerror="handleGalleryImageError(this)">
           </div>
           <div class="prop-thumb-item" onclick="switchGalleryImg('/assets/images/commercial-hero-cinematic.jpg', this)">
-            <img src="/assets/images/commercial-hero-cinematic.jpg" alt="Tower Skyline">
+            <img src="/assets/images/commercial-hero-cinematic.jpg" alt="Tower Skyline" onerror="handleGalleryImageError(this)">
           </div>
           <div class="prop-thumb-item" onclick="switchGalleryImg('/assets/images/cap-corporate-leasing.jpg', this)">
-            <img src="/assets/images/cap-corporate-leasing.jpg" alt="Executive Boardroom">
+            <img src="/assets/images/cap-corporate-leasing.jpg" alt="Executive Boardroom" onerror="handleGalleryImageError(this)">
           </div>
         </div>
       </div>
@@ -419,7 +438,7 @@
           <!-- Card 1 -->
           <div class="prop-card-lux">
             <a href="/property-detail.html?id=financial-commercial" class="prop-img-box" style="display:block;">
-              <img src="/assets/images/prop-financial-district.jpg" alt="Commercial Building Financial District" loading="lazy">
+              <img src="/assets/images/prop-financial-district.jpg" alt="Commercial Building Financial District" loading="lazy" onerror="handleGalleryImageError(this)">
               <span class="prop-badge-loc">FINANCIAL DISTRICT</span>
             </a>
             <div class="prop-body-lux">
@@ -445,7 +464,7 @@
           <!-- Card 2 -->
           <div class="prop-card-lux">
             <a href="/property-detail.html?id=gachibowli-retail" class="prop-img-box" style="display:block;">
-              <img src="/assets/images/prop-gachibowli-retail.jpg" alt="Retail Showroom Gachibowli" loading="lazy">
+              <img src="/assets/images/prop-gachibowli-retail.jpg" alt="Retail Showroom Gachibowli" loading="lazy" onerror="handleGalleryImageError(this)">
               <span class="prop-badge-loc">GACHIBOWLI</span>
             </a>
             <div class="prop-body-lux">
@@ -471,7 +490,7 @@
           <!-- Card 3 -->
           <div class="prop-card-lux">
             <a href="/property-detail.html?id=jubilee-villa" class="prop-img-box" style="display:block;">
-              <img src="/assets/images/jubilee-villa.jpg" alt="Luxury Villa Jubilee Hills" loading="lazy">
+              <img src="/assets/images/jubilee-villa.jpg" alt="Luxury Villa Jubilee Hills" loading="lazy" onerror="handleGalleryImageError(this)">
               <span class="prop-badge-loc">JUBILEE HILLS</span>
             </a>
             <div class="prop-body-lux">
@@ -938,6 +957,135 @@
           { place: 'KBR Park Circle', time: '5 Mins' },
           { place: 'HITEC City Tech Hub', time: '15 Mins' }
         ]
+      },
+
+      'sovereign-sky': {
+        title: 'Lakefront Luxury Sky Mansions',
+        subtitle: 'Ultra-Luxury 4 & 5 BHK Lakefront Residences in Kokapet',
+        category: 'Residential',
+        categoryUrl: '/service-residential.html',
+        badge: 'KOKAPET • ULTRA-LUXURY SKY MANSIONS',
+        location: 'Kokapet, West Hyderabad, Telangana',
+        area: '4,500 – 7,200 Sq. Ft.',
+        possession: 'Under Construction',
+        typology: '4 & 5 BHK Lakefront Mansions',
+        floorPlate: '45-Storey Sky Tower with 22-Foot Balconies',
+        power: '100% Redundant DG Backup',
+        parking: '3-4 Covered Multi-Level Car Parks',
+        mainImg: '/assets/images/prop-kokapet-skyvilla.jpg',
+        gallery: [
+          '/assets/images/prop-kokapet-skyvilla.jpg',
+          '/assets/images/prop-kokapet-tower.jpg',
+          '/assets/images/prop-gandipet-lake.jpg',
+          '/assets/images/residential-cap-1.jpg'
+        ],
+        desc: `<p>Perched high above the shimmering waters in the elite enclave of Kokapet, these lakefront sky mansions redefine architectural luxury in West Hyderabad. Soaring 45 storeys into the sky, each residence features expansive 22-foot double-height landscaped balconies, private sky lounges, and unhindered panoramic views of Gandipet Lake and the Financial District skyline.</p>
+               <p style="margin-top: 12px;">Featuring world-class clubhouses with infinity-edge pools, temperature-controlled indoor squash and tennis facilities, private cinema pods, and round-the-clock five-star concierge services, this is Hyderabad's most aspirational residential address.</p>`,
+        specs: {
+          class: 'Ultra-Luxury 45-Storey Lakefront High-Rise',
+          area: '4,500 to 7,200 Sq. Ft. Bespoke Layouts',
+          height: '3.60 Meters Grand Ceiling Height',
+          efficiency: '100% Vaastu Compliant Lakefront Orientation',
+          hvac: 'VRV Integrated Central Air Conditioning Provisions',
+          lifts: 'High-Speed Mitsubishi Destination Elevators (4 m/s)',
+          power: '100% Uninterrupted Dual-Source DG Synchronization',
+          fire: 'Automated Fire Suppression, Smoke Extraction & Helipad',
+          approvals: 'TS RERA Registered, HMDA Sanctioned & Bank Pre-Approved'
+        },
+        connect: [
+          { place: 'Financial District SEZ', time: '5 Mins' },
+          { place: 'Outer Ring Road (ORR Junction)', time: '3 Mins' },
+          { place: 'Neopolis High-Growth Zone', time: '4 Mins' },
+          { place: 'Gandipet Lake & Osman Sagar', time: '6 Mins' },
+          { place: 'Gachibowli Junction', time: '10 Mins' },
+          { place: 'Rajiv Gandhi Int. Airport', time: '22 Mins' }
+        ]
+      },
+
+      'tellapur-villa': {
+        title: 'Tellapur Luxury Villa Enclave',
+        subtitle: 'Exclusive Gated Community of 4 & 5 BHK Custom Villas',
+        category: 'Residential',
+        categoryUrl: '/service-residential.html',
+        badge: 'TELLAPUR • LUXURY VILLA ENCLAVE',
+        location: 'Tellapur, West Hyderabad Corridor, Telangana',
+        area: '4,200 – 6,500 Sq. Ft.',
+        possession: 'Ready to Move',
+        typology: '4 & 5 BHK Triplex Villas',
+        floorPlate: 'Triplex Villa on 450 – 600 Sq. Yds Plot',
+        power: '100% DG Generator Backup',
+        parking: '3 Covered Car Parking Spaces',
+        mainImg: '/assets/images/prop-tellapur-villa.jpg',
+        gallery: [
+          '/assets/images/prop-tellapur-villa.jpg',
+          '/assets/images/jubilee-villa.jpg',
+          '/assets/images/residential-cap-2.jpg',
+          '/assets/images/about-residential.jpg'
+        ],
+        desc: `<p>Set within lush green surroundings in the prime growth belt of Tellapur, this exclusive villa enclave delivers serene suburban tranquility with rapid access to the Financial District and Gachibowli. Each triplex home boasts custom architectural elevation, private manicured lawn gardens, and terrace gazebos.</p>
+               <p style="margin-top: 12px;">The gated community offers 24/7 biometric security, an expansive 30,000 sq.ft. resident clubhouse, heated swimming pool, outdoor sports courts, and tree-lined jogging avenues.</p>`,
+        specs: {
+          class: 'Exclusive Gated Community Triplex Villa',
+          area: '4,200 to 6,500 Sq. Ft. Built-Up (450+ Sq. Yards Plot)',
+          height: '3.40 Meters Living & Bedroom Clearance',
+          efficiency: '100% Vaastu Compliant East/North Orientations',
+          hvac: 'VRF Piping & AC Copper Run Pre-Installed',
+          lifts: 'Provision for Private Hydraulic Capsule Elevator',
+          power: 'Dedicated Transformer + 100% Silent DG Backup',
+          fire: 'Integrated Fire NOC & Smoke Detection Network',
+          approvals: 'HMDA Approved, Freehold Clear Title, OC Ready'
+        },
+        connect: [
+          { place: 'Financial District & Nanakramguda', time: '12 Mins' },
+          { place: 'Outer Ring Road (Exit 2)', time: '7 Mins' },
+          { place: 'Wipro Circle Gachibowli', time: '15 Mins' },
+          { place: 'Neopolis Tech City', time: '10 Mins' },
+          { place: 'Manthan & Sancta Maria Schools', time: '5 Mins' },
+          { place: 'Citizens Specialty Hospital', time: '8 Mins' }
+        ]
+      },
+
+      'gandipet-lake': {
+        title: 'Gandipet Lake Meadows',
+        subtitle: 'Lakeside Luxury Estates & Custom Mansions in Gandipet',
+        category: 'Residential',
+        categoryUrl: '/service-residential.html',
+        badge: 'GANDIPET • LAKESIDE LUXURY HAVEN',
+        location: 'Gandipet, West Hyderabad, Telangana',
+        area: '6,000 – 10,000 Sq. Ft.',
+        possession: 'Ready to Move',
+        typology: '5 BHK Bespoke Lakefront Villas',
+        floorPlate: 'Estate Mansions on 800 – 1,500 Sq. Yds',
+        power: '100% Silent DG Backup',
+        parking: '4 Covered Car Garage & Valet Court',
+        mainImg: '/assets/images/prop-gandipet-lake.jpg',
+        gallery: [
+          '/assets/images/prop-gandipet-lake.jpg',
+          '/assets/images/prop-kokapet-skyvilla.jpg',
+          '/assets/images/jubilee-villa.jpg',
+          '/assets/images/residential-cap-1.jpg'
+        ],
+        desc: `<p>Gandipet Lake Meadows represents an elite lakeside sanctuary overlooking the tranquil waters of Osman Sagar. Designed for Hyderabad's visionary industrialists and corporate leaders, these bespoke mansions offer expansive landscaped front lawns, private infinity pools, and classical contemporary architecture.</p>
+               <p style="margin-top: 12px;">Features include double-height grand foyers, imported Italian marble finishing, smart-home automation, home theatre, and dedicated multi-vehicle covered garage.</p>`,
+        specs: {
+          class: 'Ultra-Luxury Independent Lakeside Villa Estate',
+          area: '6,000 to 10,000 Sq. Ft. Built-up (800+ Sq. Yards Plot)',
+          height: '4.0 Meters Double-Height Salons',
+          efficiency: '100% Vaastu Compliant North-East Facing',
+          hvac: 'Daikin VRV Central Air Conditioning Installed',
+          lifts: 'Private Glass Capsule Lift Provision',
+          power: 'Dedicated 35 kVA DG Backup + Solar Net Metering',
+          fire: 'Perimeter Smart Sensors & CCTV Monitoring',
+          approvals: 'HMDA Sanctioned, Freehold Clear Title, OC Ready'
+        },
+        connect: [
+          { place: 'Financial District Nanakramguda', time: '10 Mins' },
+          { place: 'Kokapet SEZ & Neopolis', time: '8 Mins' },
+          { place: 'Outer Ring Road (Exit 1)', time: '5 Mins' },
+          { place: 'Continental Hospital', time: '11 Mins' },
+          { place: 'CBIT & Ocean Park', time: '4 Mins' },
+          { place: 'Rajiv Gandhi Int. Airport', time: '20 Mins' }
+        ]
       }
     };
 
@@ -956,16 +1104,50 @@
     PROPERTIES_DATA['the-sovereign-villa-estate'] = PROPERTIES_DATA['jubilee-villa'];
     PROPERTIES_DATA['the-grand-kokapet-sky-villas'] = PROPERTIES_DATA['sovereign-sky'];
     PROPERTIES_DATA['lakefront-luxury-sky-mansions'] = PROPERTIES_DATA['sovereign-sky'];
+    PROPERTIES_DATA['kokapet-sky'] = PROPERTIES_DATA['sovereign-sky'];
+    PROPERTIES_DATA['tellapur-luxury-villa-enclave'] = PROPERTIES_DATA['tellapur-villa'];
+    PROPERTIES_DATA['gandipet-lake-meadows'] = PROPERTIES_DATA['gandipet-lake'];
     PROPERTIES_DATA['kondapur-sky'] = PROPERTIES_DATA['oncloud-33'];
+
+    // Robust Image Fallback Handler for dynamic gallery and property views
+    function handleGalleryImageError(img) {
+      if (!img || img.dataset.errorHandled === 'true') return;
+      const currentSrc = img.getAttribute('src') || '';
+      const filename = currentSrc.split('/').pop().split('?')[0];
+
+      if (!img.dataset.attempt) {
+        img.dataset.attempt = '1';
+        if (currentSrc.startsWith('/assets/images/')) {
+          img.src = '/images/' + filename;
+          return;
+        } else if (currentSrc.startsWith('/images/')) {
+          img.src = '/assets/images/' + filename;
+          return;
+        } else {
+          img.src = '/assets/images/' + filename;
+          return;
+        }
+      } else if (img.dataset.attempt === '1') {
+        img.dataset.attempt = '2';
+        img.src = 'assets/images/' + filename;
+        return;
+      }
+
+      // Safe verified final fallback to a guaranteed property view
+      img.dataset.errorHandled = 'true';
+      img.src = '/assets/images/commercial-hero-cinematic.jpg';
+    }
 
     function switchGalleryImg(src, thumbElem) {
       const mainImg = document.getElementById('mainGalleryImg');
       if (mainImg) {
         mainImg.style.opacity = '0.3';
+        delete mainImg.dataset.attempt;
+        delete mainImg.dataset.errorHandled;
         setTimeout(() => {
           mainImg.src = src;
           mainImg.style.opacity = '1';
-        }, 150);
+        }, 120);
       }
       document.querySelectorAll('.prop-thumb-item').forEach(el => el.classList.remove('active'));
       if (thumbElem) thumbElem.classList.add('active');
@@ -1022,13 +1204,17 @@
 
       // Gallery
       const mainImg = document.getElementById('mainGalleryImg');
-      if (mainImg) mainImg.src = prop.mainImg;
+      if (mainImg) {
+        delete mainImg.dataset.attempt;
+        delete mainImg.dataset.errorHandled;
+        mainImg.src = prop.mainImg;
+      }
 
       const thumbsWrap = document.getElementById('galleryThumbs');
       if (thumbsWrap && prop.gallery && prop.gallery.length) {
         thumbsWrap.innerHTML = prop.gallery.map((imgUrl, idx) => `
           <div class="prop-thumb-item ${idx === 0 ? 'active' : ''}" onclick="switchGalleryImg('${imgUrl}', this)">
-            <img src="${imgUrl}" alt="${prop.title} View ${idx + 1}">
+            <img src="${imgUrl}" alt="${prop.title} View ${idx + 1}" onerror="handleGalleryImageError(this)" loading="lazy">
           </div>
         `).join('');
       }

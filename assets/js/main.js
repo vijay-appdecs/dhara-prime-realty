@@ -1,12 +1,14 @@
-// Fixed light luxury brand theme
+// Enforce permanent light luxury theme
 (function() {
   document.documentElement.setAttribute('data-theme', 'light');
-  try { localStorage.setItem('dhara_theme', 'light'); } catch (e) {}
+  try {
+    localStorage.removeItem('dhara_theme');
+    localStorage.setItem('dhara_theme', 'light');
+  } catch (e) {}
 })();
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
   initHeroCarousel();
   initStickyHeader();
   initMobileDrawer();
@@ -897,27 +899,7 @@ function initCounters() {
   counters.forEach(c => observer.observe(c));
 }
 
-// 9. Theme Switcher (Obsidian Luxury Dark <-> Pristine Ivory Light)
-function initThemeToggle() {
-  const toggleBtns = document.querySelectorAll('.theme-toggle-btn');
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('dhara_theme', newTheme);
 
-      // Feedback toast
-      const toast = document.getElementById('toastMsg');
-      if (toast) {
-        toast.textContent = newTheme === 'light' ? 'Light Luxury Mode Active' : 'Obsidian Dark Mode Active';
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2200);
-      }
-    });
-  });
-}
 
 
 // 10. Interactive Calendar & Time Slot Picker for Site Visits (Starts from Tomorrow)

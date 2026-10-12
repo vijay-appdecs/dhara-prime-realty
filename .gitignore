@@ -64,3 +64,5 @@ preview_light.jpg
 tagline_*
 text_im*.jpg
 transparent_tagline_3d.png
+deployment/
+*.zip

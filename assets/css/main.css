@@ -74,39 +74,11 @@
   --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme="dark"] {
-  color-scheme: dark;
-  --bg-dark: #062B5C;
-  --bg-primary: #062B5C;
-  --bg-secondary: #081B36;
-  --bg-card: rgba(6, 43, 92, 0.85);
-  --bg-card-hover: rgba(11, 74, 145, 0.90);
-  --bg-glass: rgba(11, 16, 24, 0.92);
-  --bg-glass-light: rgba(255, 255, 255, 0.05);
-  --bg-footer: #041833;
-
-  --text-pure: #FFFFFF;
-  --text-main: #F7F5F0;
-  --text-navy: #F7F5F0;
-  --text-muted: #A0AEC0;
-  --text-dim: #718096;
-
-  --border-subtle: rgba(255, 255, 255, 0.12);
-  --border-card: rgba(255, 255, 255, 0.10);
-  --border-gold: rgba(242, 204, 101, 0.45);
-}
-
-/* Dynamic Logo Switching */
+/* Logo Display - Permanent Light Luxury Theme */
 .logo-dark-img {
-  display: block !important;
+  display: none !important;
 }
 .logo-light-img {
-  display: none !important;
-}
-[data-theme="light"] .logo-dark-img {
-  display: none !important;
-}
-[data-theme="light"] .logo-light-img {
   display: block !important;
 }
 
@@ -2132,10 +2104,7 @@ textarea.form-control {
   box-shadow: 0 4px 12px rgba(176, 132, 46, 0.2);
 }
 
-[data-theme="light"] .theme-toggle-btn:hover {
-  background: rgba(176, 132, 46, 0.12);
-  border-color: var(--gold-primary);
-}
+
 
 [data-theme="light"] .menu-toggle {
   color: var(--navy-deep);
